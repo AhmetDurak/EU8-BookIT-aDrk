@@ -22,6 +22,9 @@ public class Environment {
 
         static {
 
+            // This two command lines allow us to give command from mvn
+            // So if you run your test through mvn command you can change environment by doing typing this:
+            // mvn clean test -Denvironment=environmentName
             Properties properties = null;
             String environment = System.getProperty("environment") != null
                     ? System.getProperty("environment")
